@@ -1,0 +1,17 @@
+﻿@using Application.DTOS.AboutDtos;
+@model List<ResultAboutDto>
+@foreach(var item in Model)
+{
+    <div class="col-lg-6 about-2-secs-left pl-lg-5 mt-lg-0 mt-5">
+        <h3 class="title-style mb-3">@item.AboutTitle1</h3>
+        <p class="mt-4">
+           @item.AboutDescription1
+        </p>
+        <div class="address-sec d-flex align-items-center mt-5">
+            <i class="fa fa-map-marker mr-4" aria-hidden="true"></i>
+            <h6>Türkiye<br>@DateTime.Now.Year <br>İstanbul.</h6>
+        </div>
+    </div>
+
+}
+
